@@ -47,7 +47,7 @@ const Home = () => {
         description="18-year-old software developer and student from the United Kingdom."
       />
 
-      <MainLayout>
+      <MainLayout margin={false}>
         <h1 className="text-6xl font-bold">ven</h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-sm mt-2">
           18-year-old <span className="font-semibold">software developer</span> and student from the

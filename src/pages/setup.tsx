@@ -18,7 +18,7 @@ export const ComponentText = ({ type, href, name }: Component) => {
 const Setup = () => {
   return (
     <MainLayout title="Setup" description="Information about my setup.">
-      <article className="max-w-none w-full mt-8 prose prose-lg dark:prose-dark">
+      <article className="max-w-none w-full prose prose-lg dark:prose-dark">
         <div>
           <h3>PC</h3>
           <ul>

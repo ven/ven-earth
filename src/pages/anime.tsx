@@ -6,7 +6,7 @@ import { AnimeCard } from '../components/AnimeCard'
 const Anime = () => {
   return (
     <MainLayout title="Anime" description="A collection of my favourite anime.">
-      <div className="mt-8 grid gap-6">
+      <div className="grid gap-6">
         {AnimeData.map((anime) => (
           <AnimeCard
             key={uuidv4()}

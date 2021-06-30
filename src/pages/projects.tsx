@@ -9,7 +9,7 @@ const Projects = () => {
       title="Projects"
       description="A list of all of the projects I've worked on or currently working on."
     >
-      <div className="mt-8 grid gap-6">
+      <div className="grid gap-6">
         {ProjectData.map((project) => (
           <ProjectCard
             key={uuidv4()}
