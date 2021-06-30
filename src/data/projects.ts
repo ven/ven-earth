@@ -24,18 +24,18 @@ export const ProjectData: Project[] = [
     title: 'Huecord',
     description: 'A Discord bot to manage Philips Hue appliances within Discord.',
     href: 'https://github.com/ven/huecord',
-    icon: ['fab', 'spotify'],
+    icon: ['far', 'lightbulb'],
   },
   {
     title: 'Spotify Dashboard',
     description:
       'A minimalistic dashboard for Spotify, allowing you to view your top songs and artists and play music from the application.',
-    icon: ['far', 'tachometer'],
+    icon: ['fab', 'spotify'],
   },
   {
     title: 'Light Dashboard',
     description:
       'A Philips Hue dashboard made with React, allowing control of light appliances directly from the browser.',
-    icon: ['far', 'lightbulb'],
+    icon: ['far', 'tachometer'],
   },
 ]
