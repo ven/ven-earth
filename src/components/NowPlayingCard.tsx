@@ -23,7 +23,7 @@ export const NowPlayingCard = () => {
           width={45}
           alt="Song cover art"
           className="w-full h-full rounded shadow"
-          src={lastFM.status === 'playing' ? lastFM.song.art : '/song.webp'}
+          src={lastFM.status === 'playing' ? lastFM.song.art : '/img/song.webp'}
         />
         <div className="my-auto ml-4">
           <div className="font-semibold text-sm sm:text-regular">

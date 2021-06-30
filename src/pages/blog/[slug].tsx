@@ -16,7 +16,7 @@ export default function Posts({ source, frontMatter }) {
       <div className="mt-6 flex flex-row items-center">
         <Image
           className="rounded-full"
-          src="/ven.jpg"
+          src="/img/ven.jpg"
           alt="ven profile picture"
           width={24}
           height={24}
