@@ -1,15 +1,9 @@
-import { useState } from "react";
-import { Anime } from "../data/anime";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from 'react'
+import { Anime } from '../data/anime'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const AnimeCard = ({
-  title,
-  href,
-  imgName,
-  altTitle,
-  starred,
-}: Anime) => {
-  const [hovering, setHovering] = useState(false);
+export const AnimeCard = ({ title, href, imgName, altTitle, starred }: Anime) => {
+  const [hovering, setHovering] = useState(false)
 
   return (
     <a
@@ -24,21 +18,19 @@ export const AnimeCard = ({
     >
       <div
         className={`transition duration-300 ease-in-out ${
-          hovering ? "opacity-40" : "opacity-100 "
+          hovering ? 'opacity-40' : 'opacity-100 '
         } rounded-md bg-cover absolute w-full h-full`}
-        style={{ backgroundImage: `url('./anime/${imgName}.jpg')` }}
+        style={{ backgroundImage: `url('./img/anime/${imgName}.jpg')` }}
       ></div>
       <div
         className={`transition duration-300 ease-in-out ${
-          hovering ? "opacity-100" : "opacity-0 "
+          hovering ? 'opacity-100' : 'opacity-0 '
         } ml-0 sm:ml-4 z-40 text-2xl my-auto font-bold`}
       >
         <div>
-          {starred && (
-            <FontAwesomeIcon icon={["far", "stars"]} className="mr-2" />
-          )}
+          {starred && <FontAwesomeIcon icon={['far', 'stars']} className="mr-2" />}
           {title}
-        </div>{" "}
+        </div>{' '}
         {altTitle && (
           <div className="text-xs text-gray-900 dark:text-gray-200 italic font-semibold opacity-75">
             ({altTitle})
@@ -46,5 +38,5 @@ export const AnimeCard = ({
         )}
       </div>
     </a>
-  );
-};
+  )
+}
