@@ -14,7 +14,7 @@ const format = 'hh:mm:ss'
 const beforeTime = moment.tz('00:00:00', format, 'Europe/London')
 const afterTime = moment.tz('08:00:00', format, 'Europe/London')
 
-export const Time = () => {
+const Time = () => {
   const [date, setDate] = useState(now())
 
   const currentEvent = Object.entries(events)
@@ -27,7 +27,7 @@ export const Time = () => {
   }, [])
 
   return (
-    <p suppressHydrationWarning>
+    <p>
       <FontAwesomeIcon
         className="mr-2"
         icon={date.isBetween(beforeTime, afterTime) ? ['far', 'snooze'] : ['far', 'clock']}
@@ -47,3 +47,5 @@ export const Time = () => {
     </p>
   )
 }
+
+export default Time

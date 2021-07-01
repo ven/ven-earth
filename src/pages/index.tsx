@@ -1,6 +1,7 @@
 import { MainLayout } from '../layouts/MainLayout'
 import { GenericMeta } from '../components/GenericMeta'
 import { useTheme } from 'next-themes'
+import dynamic from 'next/dynamic'
 import { v4 as uuidv4 } from 'uuid'
 import toast from 'react-hot-toast'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,7 +9,9 @@ import { IconName } from '@fortawesome/fontawesome-svg-core'
 import { Account, AccountData } from '../data/accounts'
 import { NowPlayingCard } from '../components/NowPlayingCard'
 import { Weather } from '../components/Weather'
-import { Time } from '../components/Time'
+const Time = dynamic(() => import('../components/Time'), {
+  ssr: false,
+})
 
 const SocialLink = ({ name, href, icon, copyEmail }: Account) => {
   return (
