@@ -18,7 +18,7 @@ export const Time = () => {
   const [date, setDate] = useState(now())
 
   const currentEvent = Object.entries(events)
-    .filter((entry) => entry[1][0] === date.day() && entry[1][1] === date.month() + 1)
+    .filter((entry) => entry[1][0] === date.date() && entry[1][1] === date.month() + 1)
     .flat()[0] as string
 
   useEffect(() => {
