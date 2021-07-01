@@ -18,6 +18,7 @@ export const ProjectData: Project[] = [
     title: 'ven.earth',
     description:
       "The website you're currently on! Made with Next.js and utilises serverless functions.",
+    href: 'https://github.com/ven/ven-earth',
     icon: ['fas', 'globe-europe'],
   },
   {
