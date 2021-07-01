@@ -1,5 +1,5 @@
-import { Project } from "../data/projects";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Project } from '../data/projects'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const ProjectCard = ({ title, description, href, icon }: Project) => {
   return (
@@ -17,5 +17,5 @@ export const ProjectCard = ({ title, description, href, icon }: Project) => {
         <div className="text-gray-600 dark:text-gray-300">{description}</div>
       </div>
     </a>
-  );
-};
+  )
+}

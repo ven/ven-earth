@@ -1,8 +1,8 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 interface Props {
-  title: string;
-  description: string;
+  title: string
+  description: string
 }
 
 export const GenericMeta = ({ title, description }: Props) => {
@@ -13,5 +13,5 @@ export const GenericMeta = ({ title, description }: Props) => {
       <meta name="description" content={description} />
       <meta property="og:description" content={description} />
     </Head>
-  );
-};
+  )
+}
