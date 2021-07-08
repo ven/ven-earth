@@ -6,7 +6,7 @@ import { WeatherResponse } from '../types/weather'
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-common-types'
 
 export const Weather = () => {
-  const [useCelsius, setCelsius] = useState<boolean>(true)
+  const [useCelsius, setCelsius] = useState(true)
 
   const { data }: { data?: WeatherResponse } = useSWR('/api/weather', (url) =>
     fetch(url).then((res) => res.json())
@@ -14,10 +14,9 @@ export const Weather = () => {
 
   if (!data) return null
 
-  const weatherName = data.weather[0].main
-  const weatherDescription = data.weather[0].description
+  const { main: weatherName, description: weatherDescription } = data.weather[0]
+  const { temp: celsius } = data.main
 
-  const celsius = Number(data.main.temp)
   const fahrenheit = (celsius * 9) / 5 + 32
   const toggleTemperature = () => setCelsius((celsius) => !celsius)
 
