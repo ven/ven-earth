@@ -8,7 +8,7 @@ const { NEXT_PUBLIC_LASTFM_API_KEY } = process.env
 export const NowPlayingCard = () => {
   const lastFM = useLastFM('venoras', NEXT_PUBLIC_LASTFM_API_KEY, 5000, 'large')
 
-  if (lastFM.status === 'connecting') return null
+  if (['connecting', 'error'].includes(lastFM.status)) return null
 
   return (
     <FadeIn>

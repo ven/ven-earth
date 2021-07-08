@@ -5337,6 +5337,13 @@ swr@^0.3.11:
   dependencies:
     dequal "2.0.2"
 
+swr@^0.4.0:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-0.4.2.tgz#4a9ed5e9948088af145c79d716d294cb99712a29"
+  integrity sha512-SKGxcAfyijj/lE5ja5zVMDqJNudASH3WZPRUakDVOePTM18FnsXgugndjl9BSRwj+jokFCulMDe7F2pQL+VhEw==
+  dependencies:
+    dequal "2.0.2"
+
 table@^6.0.9:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/table/-/table-6.7.1.tgz#ee05592b7143831a8c94f3cee6aae4c1ccef33e2"
@@ -5695,10 +5702,12 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-last-fm@^0.2.11:
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/use-last-fm/-/use-last-fm-0.2.13.tgz#dea24a9d6a27067b4d6733558f8b0c7a331a4d86"
-  integrity sha512-6vtHPt+C5J+4QKrreOCk3SgIgtUek1atJECZdBGO2nl8/yOuk/kBgG+9ATfyaAvRTirBzSKPKjB7ZXMexQmubA==
+use-last-fm@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/use-last-fm/-/use-last-fm-0.6.0.tgz#e5b572f77c46e53f0bcd0e8743c60818d1f97c1d"
+  integrity sha512-HYefHW6VnbfztR/h6A0ILkD7ScgqXiKi6nOYlh92bwO7Jf8xUL3S/LQ9qCFOA8qHWyDHjFHUUUDjlMQPjM8g2g==
+  dependencies:
+    swr "^0.4.0"
 
 use-sound@^2.0.1:
   version "2.2.0"
