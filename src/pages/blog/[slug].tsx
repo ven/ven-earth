@@ -2,15 +2,13 @@ import { BlogLayout } from '../../layouts/BlogLayout'
 import Image from 'next/image'
 import { getAllPostSlugs, getPostData } from '../../lib/posts'
 import { MDXComponents } from '../../components/MDXComponents'
-import renderToString from 'next-mdx-remote/render-to-string'
+import { MDXRemote } from 'next-mdx-remote'
+import { serialize } from 'next-mdx-remote/serialize'
 import readingTime from 'reading-time'
 import rehypePrism from '@mapbox/rehype-prism'
-import hydrate from 'next-mdx-remote/hydrate'
 import matter from 'gray-matter'
 
 export default function Posts({ source, frontMatter }) {
-  const content = hydrate(source, { components: MDXComponents })
-
   return (
     <BlogLayout title={frontMatter.title} description={frontMatter.excerpt}>
       <div className="mt-6 flex flex-row items-center">
@@ -33,7 +31,9 @@ export default function Posts({ source, frontMatter }) {
           • published on {frontMatter.date} • {frontMatter.readingTime.text}
         </p>
       </div>
-      <article className="max-w-none w-full mt-8 prose prose-lg dark:prose-dark">{content}</article>
+      <article className="max-w-none w-full mt-8 prose prose-lg dark:prose-dark">
+        <MDXRemote {...source} components={MDXComponents} />
+      </article>
     </BlogLayout>
   )
 }
@@ -49,9 +49,8 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const postContent = await getPostData(params.slug)
   const { data, content } = matter(postContent)
-  const mdxSource = await renderToString(content, {
+  const mdxSource = await serialize(content, {
     scope: data,
-    components: MDXComponents,
     mdxOptions: {
       remarkPlugins: [
         require('remark-autolink-headings'),
