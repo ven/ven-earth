@@ -55,6 +55,16 @@ module.exports = {
               color: theme('colors.gray.300'),
             },
 
+            // wtf tailwind!
+
+            'code::before': {
+              content: '""',
+            },
+
+            'code::after': {
+              content: '""',
+            },
+
             figcaption: {
               color: theme('colors.gray.500'),
             },
