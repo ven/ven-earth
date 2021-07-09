@@ -1,18 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
-import moment from 'moment'
-import 'moment-timezone'
+import { dayjs } from '../lib/dayjs'
 
-const now = () => moment.tz('Europe/London')
+const now = () => dayjs().tz()
 
 const events = {
   christmas: [25, 12],
   newYear: [1, 1],
 }
 
-const format = 'hh:mm:ss'
-const beforeTime = moment.tz('00:00:00', format, 'Europe/London')
-const afterTime = moment.tz('08:00:00', format, 'Europe/London')
+const format = 'hhA'
+const beforeTime = dayjs('12AM', format).tz()
+const afterTime = dayjs('8PM', format).tz()
 
 const Time = () => {
   const [date, setDate] = useState(now())
