@@ -82,6 +82,9 @@ module.exports = {
       screens: {
         xs: '481px',
       },
+      fontSize: {
+        xxs: '0.7rem',
+      },
     },
   },
   variants: {

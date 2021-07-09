@@ -31,8 +31,8 @@ export const NowPlayingCard = () => {
               ? `Listening to ${truncate(lastFM.song.name, 25)}`
               : 'Not listening to anything'}
           </div>
-          <p className="text-xs">
-            <FontAwesomeIcon className="fill-current text-green-600" icon={['fab', 'spotify']} />{' '}
+          <p className="text-xxs">
+            <FontAwesomeIcon className="fill-current text-green-500" icon={['fab', 'spotify']} />{' '}
             Spotify
           </p>
         </div>
