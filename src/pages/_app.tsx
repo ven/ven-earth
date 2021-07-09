@@ -1,11 +1,11 @@
 import '../styles/globals.css'
-import { Navbar } from '../components/Nav/Navbar'
-import { ThemeProvider } from 'next-themes'
-import { Toaster } from 'react-hot-toast'
-import { AppProps } from 'next/app'
 import '../lib/fontawesome'
+import { Navbar } from '../components/Nav/Navbar'
+import { Toaster } from 'react-hot-toast'
+import { ThemeProvider } from 'next-themes'
+import { AppProps } from 'next/app'
 
-const App = ({ Component, pageProps, router }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">
       <Toaster position="bottom-left" />
