@@ -17,7 +17,6 @@ export default function Posts({ source, frontMatter }) {
           className="rounded-full"
           src={VenImage}
           alt="ven profile picture"
-          placeholder="blur"
           width={24}
           height={24}
         />
