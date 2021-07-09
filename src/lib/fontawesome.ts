@@ -2,6 +2,7 @@ import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faTwitter, faGithub, faDiscord, faSpotify } from '@fortawesome/free-brands-svg-icons'
 import {
   faEnvelope,
+  faSearch,
   faCalendarDay,
   faGlobeEurope,
   faCaretDown as faSolidCaretDown,
@@ -38,7 +39,7 @@ config.autoAddCss = false
 library.add(faTwitter, faGithub, faDiscord, faSpotify)
 
 // Import @fortawesome/free-solid-svg-icons
-library.add(faEnvelope, faCalendarDay, faGlobeEurope, faSolidCaretDown)
+library.add(faEnvelope, faSearch, faCalendarDay, faGlobeEurope, faSolidCaretDown)
 
 // Import @fortawesome/free-regular-svg-icons
 library.add(faClock)

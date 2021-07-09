@@ -22,6 +22,12 @@ export const ProjectData: Project[] = [
     icon: ['fas', 'globe-europe'],
   },
   {
+    title: 'Lookup',
+    description: 'Easily get data about a Discord account from an ID.',
+    href: 'https://lookup.ven.earth',
+    icon: ['fas', 'search'],
+  },
+  {
     title: 'Huecord',
     description: 'A Discord bot to manage Philips Hue appliances within Discord.',
     href: 'https://github.com/ven/huecord',
