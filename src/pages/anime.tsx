@@ -1,7 +1,7 @@
-import { MainLayout } from '../layouts/MainLayout'
+import { MainLayout } from 'layouts/MainLayout'
 import { v4 as uuidv4 } from 'uuid'
-import { AnimeData } from '../data/anime'
-import { AnimeCard } from '../components/AnimeCard'
+import { AnimeData } from 'data/anime'
+import { AnimeCard } from 'components/AnimeCard'
 
 const Anime = () => {
   return (

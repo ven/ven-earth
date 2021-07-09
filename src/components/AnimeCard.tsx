@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Anime } from '../data/anime'
+import { Anime } from 'data/anime'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const AnimeCard = ({ title, href, imgName, altTitle, starred }: Anime) => {

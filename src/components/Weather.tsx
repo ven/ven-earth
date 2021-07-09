@@ -2,8 +2,8 @@ import useSWR from 'swr'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { WeatherResponse } from '../types/weather'
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-common-types'
+import { WeatherResponse } from 'types/weather'
 
 export const Weather = () => {
   const [useCelsius, setCelsius] = useState(true)

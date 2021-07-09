@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useLastFM } from 'use-last-fm'
+import { truncate } from 'lib/utils'
 import Image from 'next/image'
 import FadeIn from 'react-fade-in'
-import { truncate } from '../lib/utils'
 const { NEXT_PUBLIC_LASTFM_API_KEY } = process.env
 
 export const NowPlayingCard = () => {

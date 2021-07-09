@@ -1,7 +1,7 @@
-import { MainLayout } from '../layouts/MainLayout'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { MainLayout } from 'layouts/MainLayout'
 import { v4 as uuidv4 } from 'uuid'
-import { ComponentData, Component } from '../data/setup'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ComponentData, Component } from 'data/setup'
 
 export const ComponentText = ({ type, href, name }: Component) => {
   return (

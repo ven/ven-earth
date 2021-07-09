@@ -1,4 +1,4 @@
-import { Project } from '../data/projects'
+import { Project } from 'data/projects'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const ProjectCard = ({ title, description, href, icon }: Project) => {

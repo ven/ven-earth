@@ -1,7 +1,7 @@
-import { MainLayout } from '../layouts/MainLayout'
+import { MainLayout } from 'layouts/MainLayout'
 import { v4 as uuidv4 } from 'uuid'
-import { ProjectData } from '../data/projects'
-import { ProjectCard } from '../components/ProjectCard'
+import { ProjectData } from 'data/projects'
+import { ProjectCard } from 'components/ProjectCard'
 
 const Projects = () => {
   return (

@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
-import { dayjs } from '../lib/dayjs'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { dayjs } from 'lib/dayjs'
 
 const now = () => dayjs().tz()
 

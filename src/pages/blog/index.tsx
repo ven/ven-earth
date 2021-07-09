@@ -1,8 +1,7 @@
-import { MainLayout } from '../../layouts/MainLayout'
-import { GenericMeta } from '../../components/GenericMeta'
-import { getSortedPosts } from '../../lib/posts'
-import { BlogCard } from '../../components/BlogCard'
+import { MainLayout } from 'layouts/MainLayout'
 import { v4 as uuidv4 } from 'uuid'
+import { getSortedPosts } from 'lib/posts'
+import { BlogCard } from 'components/BlogCard'
 
 const Blog = ({ allPostsData }) => {
   return (

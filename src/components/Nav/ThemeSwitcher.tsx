@@ -1,6 +1,6 @@
+import useSound from 'use-sound'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTheme } from 'next-themes'
-import useSound from 'use-sound'
 import { useEffect, useState } from 'react'
 
 export const ThemeSwitcher = () => {

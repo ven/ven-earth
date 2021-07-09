@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { GenericMeta } from '../components/GenericMeta'
+import { GenericMeta } from 'components/GenericMeta'
 import FadeIn from 'react-fade-in'
 
 interface Props {
