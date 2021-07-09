@@ -4,6 +4,9 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "baseUrl": "./src/",
+    "paths": {
+      "@public/*": ["../public/*"]
+    },
     "skipLibCheck": true,
     "strict": false,
     "forceConsistentCasingInFileNames": true,

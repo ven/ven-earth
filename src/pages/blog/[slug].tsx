@@ -1,5 +1,4 @@
 import { BlogLayout } from 'layouts/BlogLayout'
-import Image from 'next/image'
 import { getAllPostSlugs, getPostData } from 'lib/posts'
 import { MDXComponents } from 'components/MDXComponents'
 import { MDXRemote } from 'next-mdx-remote'
@@ -7,6 +6,8 @@ import { serialize } from 'next-mdx-remote/serialize'
 import readingTime from 'reading-time'
 import rehypePrism from '@mapbox/rehype-prism'
 import matter from 'gray-matter'
+import Image from 'next/image'
+import VenImage from '@public/img/ven.jpg'
 
 export default function Posts({ source, frontMatter }) {
   return (
@@ -14,8 +15,9 @@ export default function Posts({ source, frontMatter }) {
       <div className="mt-6 flex flex-row items-center">
         <Image
           className="rounded-full"
-          src="/img/ven.jpg"
+          src={VenImage}
           alt="ven profile picture"
+          placeholder="blur"
           width={24}
           height={24}
         />
