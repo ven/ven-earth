@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       typography: (theme) => ({
-        default: {
+        DEFAULT: {
           css: {
             color: theme('colors.gray.900'),
             a: {
@@ -15,6 +15,15 @@ module.exports = {
               '&:hover': {
                 color: theme('colors.blue.500'),
               },
+            },
+
+            // wtf tailwind!
+
+            'code::before': {
+              content: '""',
+            },
+            'code::after': {
+              content: '""',
             },
           },
         },
@@ -53,16 +62,6 @@ module.exports = {
 
             code: {
               color: theme('colors.gray.300'),
-            },
-
-            // wtf tailwind!
-
-            'code::before': {
-              content: '""',
-            },
-
-            'code::after': {
-              content: '""',
             },
 
             figcaption: {
