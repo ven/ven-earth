@@ -7,9 +7,7 @@ import { LastFMResponse } from 'types/lastFM'
 import { AlbumCard } from 'components/AlbumCard'
 
 export default function Albums() {
-  const { data }: { data?: LastFMResponse } = useSWR('/api/topAlbums', (url) =>
-    fetch(url).then((res) => res.json())
-  )
+  const { data }: { data?: LastFMResponse } = useSWR('/api/topAlbums')
 
   return (
     <>

@@ -8,9 +8,7 @@ import { WeatherResponse } from 'types/weather'
 export const Weather = () => {
   const [useCelsius, setCelsius] = useState(true)
 
-  const { data }: { data?: WeatherResponse } = useSWR('/api/weather', (url) =>
-    fetch(url).then((res) => res.json())
-  )
+  const { data }: { data?: WeatherResponse } = useSWR('/api/weather')
 
   if (!data) return null
 
