@@ -8,7 +8,7 @@ import { WeatherResponse } from 'types/weather'
 export const Weather = () => {
   const [useCelsius, setCelsius] = useState(true)
 
-  const { data }: { data?: WeatherResponse } = useSWR('/api/weather')
+  const { data }: { data?: WeatherResponse } = useSWR('weather')
 
   if (!data) return null
 

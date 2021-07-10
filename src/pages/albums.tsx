@@ -7,7 +7,7 @@ import { LastFMResponse } from 'types/lastFM'
 import { AlbumCard } from 'components/AlbumCard'
 
 export default function Albums() {
-  const { data }: { data?: LastFMResponse } = useSWR('/api/topAlbums')
+  const { data }: { data?: LastFMResponse } = useSWR('topAlbums')
 
   return (
     <>
