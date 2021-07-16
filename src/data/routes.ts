@@ -2,7 +2,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
 export interface Route {
   name: string
-  href?: string
+  href: string
   type?: string
   icon?: IconProp
 }
@@ -23,14 +23,17 @@ export const RouteData: Route[] = [
   },
   {
     name: 'anime',
+    href: '/anime',
     type: 'dropdown',
   },
   {
     name: 'setup',
+    href: '/setup',
     type: 'dropdown',
   },
   {
     name: 'albums',
+    href: '/albums',
     type: 'dropdown',
   },
 ]

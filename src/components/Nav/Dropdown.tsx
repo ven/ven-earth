@@ -8,13 +8,15 @@ import { RouteData } from 'data/routes'
 
 export const DropLink = ({
   page,
+  href,
   setActive,
 }: {
   page: string
+  href: string
   setActive: (active: boolean) => void
 }) => {
   return (
-    <NextLink href={`/${page}`}>
+    <NextLink href={href}>
       <a
         onClick={() => setActive(false)}
         className="focus:outline-none transition duration-300 ease-in-out hover:text-indigo-900 dark:hover:text-indigo-200 flex flex-row items-center"
@@ -51,7 +53,7 @@ export const Dropdown = () => {
             className="text-xs absolute border border-black bg-white dark:border-white dark:bg-black py-3 pl-4 pr-12 rounded mt-4 grid gap-3"
           >
             {RouteData.filter((route) => route.type === 'dropdown').map((route) => (
-              <DropLink key={uuidv4()} page={route.name} setActive={setActive} />
+              <DropLink key={uuidv4()} page={route.name} href={route.href} setActive={setActive} />
             ))}
           </motion.div>
         )}

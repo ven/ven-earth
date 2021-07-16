@@ -4,12 +4,18 @@ import { MDXComponents } from 'components/MDXComponents'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import readingTime from 'reading-time'
+//@ts-ignore
 import rehypePrism from '@mapbox/rehype-prism'
 import matter from 'gray-matter'
 import Image from 'next/image'
 import VenImage from '@public/img/ven.jpg'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { ParsedUrlQuery } from 'querystring'
 
-export default function Posts({ source, frontMatter }) {
+export default function Posts({
+  source,
+  frontMatter,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <BlogLayout title={frontMatter.title} description={frontMatter.excerpt}>
       <div className="mt-6 flex flex-row items-center">
@@ -47,7 +53,12 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params }) {
+interface Params extends ParsedUrlQuery {
+  slug: string
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const params = context.params as Params
   const postContent = await getPostData(params.slug)
   const { data, content } = matter(postContent)
   const mdxSource = await serialize(content, {

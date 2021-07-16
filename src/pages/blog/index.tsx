@@ -2,8 +2,9 @@ import { MainLayout } from 'layouts/MainLayout'
 import { v4 as uuidv4 } from 'uuid'
 import { getSortedPosts } from 'lib/posts'
 import { BlogCard } from 'components/BlogCard'
+import { InferGetStaticPropsType } from 'next'
 
-const Blog = ({ allPostsData }) => {
+const Blog = ({ allPostsData }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <MainLayout
       title="Blog"

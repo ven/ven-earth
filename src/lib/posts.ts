@@ -16,7 +16,7 @@ export const getSortedPosts = () => {
     const formattedDate = new Date(data.date).toLocaleDateString('en-GB')
 
     const frontmatter = {
-      ...data,
+      ...(data as { title: string; excerpt: string }),
       date: formattedDate,
     }
 

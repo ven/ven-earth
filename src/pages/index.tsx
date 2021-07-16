@@ -17,7 +17,7 @@ const SocialLink = ({ name, href, icon, copyEmail }: Account) => {
   return (
     <a
       aria-label={name}
-      onClick={() => name === 'Email' && copyEmail()}
+      onClick={() => copyEmail && copyEmail()}
       className="cursor-pointer fill-current focus:outline-none transition duration-300 ease-in-out hover:text-indigo-900 dark:hover:text-indigo-200"
       href={href}
       rel="noopener noreferrer"

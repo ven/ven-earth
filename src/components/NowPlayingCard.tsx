@@ -7,7 +7,7 @@ import SongImage from '@public/img/song.webp'
 const { NEXT_PUBLIC_LASTFM_API_KEY } = process.env
 
 export const NowPlayingCard = () => {
-  const lastFM = useLastFM('venoras', NEXT_PUBLIC_LASTFM_API_KEY, 5000, 'large')
+  const lastFM = useLastFM('venoras', NEXT_PUBLIC_LASTFM_API_KEY!, 5000, 'large')
 
   if (['connecting', 'error'].includes(lastFM.status)) return null
 

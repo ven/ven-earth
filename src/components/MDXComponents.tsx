@@ -2,7 +2,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Tweet from 'react-tweet-embed'
 
-const CustomLink = (props) => {
+interface Props {
+  href: string
+}
+
+const CustomLink = (props: Props) => {
   const href = props.href
   const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'))
 
