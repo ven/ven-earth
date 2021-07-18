@@ -11,7 +11,7 @@ const events = {
 
 const format = 'hhA'
 const beforeTime = dayjs('12AM', format).tz()
-const afterTime = dayjs('8PM', format).tz()
+const afterTime = dayjs('8AM', format).tz()
 
 const Time = () => {
   const [date, setDate] = useState(now())
