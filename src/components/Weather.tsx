@@ -30,6 +30,7 @@ export const Weather = () => {
             Mist: ['far', 'cloud-rain'],
             Clouds: ['far', 'clouds'],
             Clear: ['far', 'cloud-sun'],
+            Haze: ['far', 'sun-haze'],
           }[weatherName] as [IconPrefix, IconName]) || ['far', 'cloud']
         }
         className="mr-2"
