@@ -22,17 +22,15 @@ export const Weather = () => {
     <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
       <FontAwesomeIcon
         icon={
-          weatherName
-            ? ({
-                Snow: ['far', 'cloud-snow'],
-                Thunderstorm: ['far', 'thunderstorm'],
-                Rain: ['far', 'cloud-showers-heavy'],
-                Drizzle: ['far', 'cloud-rain'],
-                Mist: ['far', 'cloud-rain'],
-                Clouds: ['far', 'clouds'],
-                Clear: ['far', 'cloud-sun'],
-              }[weatherName] as [IconPrefix, IconName])
-            : ['far', 'cloud']
+          ({
+            Snow: ['far', 'cloud-snow'],
+            Thunderstorm: ['far', 'thunderstorm'],
+            Rain: ['far', 'cloud-showers-heavy'],
+            Drizzle: ['far', 'cloud-rain'],
+            Mist: ['far', 'cloud-rain'],
+            Clouds: ['far', 'clouds'],
+            Clear: ['far', 'cloud-sun'],
+          }[weatherName] as [IconPrefix, IconName]) || ['far', 'cloud']
         }
         className="mr-2"
       />
