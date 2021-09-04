@@ -18,7 +18,7 @@ export default function Albums() {
           <FadeIn>
             <div
               className="rounded-lg justify-center md:justify-start
-           grid grid-flow-row xs:grid-flow-col gap-6 xs:grid-rows-2 overflow-scroll p-3"
+           grid grid-flow-row xs:grid-flow-col gap-6 xs:grid-rows-2 overflow-scroll no-scrollbar p-3"
             >
               {data.topalbums.album
                 .filter((album) => album.image[3]['#text'])
