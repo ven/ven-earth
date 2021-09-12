@@ -27,6 +27,7 @@ import {
   faCloudSun,
   faSunHaze,
   faClipboard,
+  faExternalLink,
 } from '@fortawesome/pro-regular-svg-icons'
 import { faSun } from '@fortawesome/pro-duotone-svg-icons'
 
@@ -64,7 +65,8 @@ library.add(
   faCloudRain,
   faCloudSun,
   faSunHaze,
-  faClipboard
+  faClipboard,
+  faExternalLink
 )
 
 // Import @fortawesome/pro-duotone-svg-icons

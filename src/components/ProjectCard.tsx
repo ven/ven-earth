@@ -13,7 +13,10 @@ export const ProjectCard = ({ title, description, href, icon }: Project) => {
         <FontAwesomeIcon icon={icon} />
       </div>
       <div className="flex flex-col w-full sm:w-11/12">
-        <div className="font-bold">{title}</div>
+        <div className="flex gap-2 items-center">
+          <div className="font-bold">{title}</div>
+          {href && <FontAwesomeIcon size="sm" icon={['far', 'external-link']} />}
+        </div>
         <div className="text-gray-600 dark:text-gray-300">{description}</div>
       </div>
     </a>
