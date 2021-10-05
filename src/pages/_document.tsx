@@ -19,7 +19,7 @@ class AppDocument extends Document {
           <meta property="og:url" content="https://ven.earth" />
           <meta property="og:site_name" content="ven.earth" />
           <meta property="og:image" content="/img/ven.jpg" />
-          <meta name="theme-color" content="#6a0dad" />
+          <meta name="theme-color" content="#000000" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:image" content="https://ven.earth/img/ven.jpg" />
         </Head>
