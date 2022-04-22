@@ -7,6 +7,7 @@ const now = () => dayjs().tz()
 const events = {
   christmas: [25, 12],
   newYear: [1, 1],
+  earthDay: [22, 4],
 }
 
 const format = 'hhA'
@@ -39,6 +40,7 @@ const Time = () => {
             {
               christmas: 'Merry Christmas!',
               newYear: 'Happy New Year!',
+              earthDay: 'Happy Earth Day!',
             }[currentEvent]
           }
         </span>
