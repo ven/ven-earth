@@ -33,14 +33,23 @@ const Setup = () => {
           </ul>
         </div>
         <div>
-          <h3>Laptop</h3>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.apple.com/uk/macbook-pro-13/"
-          >
-            Apple MacBook Pro (M1)
-          </a>
+          <h3>Laptops</h3>
+          <div className="flex flex-col gap-y-3">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.apple.com/uk/macbook-pro-14-and-16/"
+            >
+              Apple MacBook Pro 14" (M1 Pro)
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.apple.com/uk/macbook-pro-13/"
+            >
+              Apple MacBook Pro 13" (M1)
+            </a>
+          </div>
         </div>
       </article>
     </MainLayout>
