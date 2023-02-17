@@ -12,7 +12,7 @@ export const ComponentData: Component[] = [
   },
   {
     type: 'Motherboard',
-    name: 'MSI MEG Z490 UNIFY',
+    name: 'MPG Z790 EDGE WIFI',
     href: 'https://www.msi.com/Motherboard/MPG-Z790-EDGE-WIFI',
   },
   {
