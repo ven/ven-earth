@@ -1,14 +1,14 @@
-import { MainLayout } from 'layouts/MainLayout'
+import { IconName } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { GenericMeta } from 'components/GenericMeta'
-import { v4 as uuidv4 } from 'uuid'
+import { NowPlayingCard } from 'components/NowPlayingCard'
+import { Weather } from 'components/Weather'
+import { Account, AccountData } from 'data/accounts'
+import { MainLayout } from 'layouts/MainLayout'
 import { useTheme } from 'next-themes'
 import dynamic from 'next/dynamic'
 import toast from 'react-hot-toast'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconName } from '@fortawesome/fontawesome-svg-core'
-import { Account, AccountData } from 'data/accounts'
-import { NowPlayingCard } from 'components/NowPlayingCard'
-import { Weather } from 'components/Weather'
+import { v4 as uuidv4 } from 'uuid'
 const Time = dynamic(() => import('components/Time'), {
   ssr: false,
 })
@@ -53,8 +53,8 @@ const Home = () => {
       <MainLayout margin={false}>
         <h1 className="text-6xl font-bold">ven</h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-sm mt-2">
-          20-year-old <span className="font-semibold">software engineer</span> and student from the
-          United Kingdom.
+          20-year-old <span className="font-semibold">software engineer</span> from the United
+          Kingdom.
         </p>
         <div className="grid grid-flow-col w-48 mt-3 text-lg">
           {AccountData.map((account) => (
