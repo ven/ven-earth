@@ -12,12 +12,12 @@ export const ComponentData: Component[] = [
   },
   {
     type: 'Motherboard',
-    name: 'MPG Z790 EDGE WIFI',
+    name: 'MSI MPG Z790 EDGE WIFI',
     href: 'https://www.msi.com/Motherboard/MPG-Z790-EDGE-WIFI',
   },
   {
     type: 'PSU',
-    name: 'Corsair HX Series™ HX1200 — 1200 Watt 80 PLUS® PLATINUM',
+    name: 'Corsair HX Series™ HX1200 — 1200W',
     href: 'https://www.corsair.com/uk/en/Categories/Products/Power-Supply-Units/hxi-series-2017-config/p/CP-9020140-UK',
   },
   {
