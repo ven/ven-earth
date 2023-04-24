@@ -4,10 +4,10 @@ export interface Account {
   name: string
   href?: string
   icon?: IconProp
-  copyEmail?: () => void
+  copyEmail: () => void
 }
 
-export const AccountData: Account[] = [
+export const AccountData: Omit<Account, 'copyEmail'>[] = [
   {
     name: 'GitHub',
     href: '/github',
