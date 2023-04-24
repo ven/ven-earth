@@ -1,8 +1,8 @@
-import useSWR from 'swr'
-import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconName, IconPrefix } from '@fortawesome/fontawesome-common-types'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+import useSWR from 'swr'
 import { WeatherResponse } from 'types/weather'
 
 export const Weather = () => {
@@ -31,7 +31,7 @@ export const Weather = () => {
             Clouds: ['far', 'clouds'],
             Clear: ['far', 'cloud-sun'],
             Haze: ['far', 'sun-haze'],
-          }[weatherName] as [IconPrefix, IconName]) || ['far', 'cloud']
+          }[weatherName] as IconProp) || ['far', 'cloud']
         }
         className="mr-2"
       />

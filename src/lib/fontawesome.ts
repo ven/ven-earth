@@ -1,35 +1,35 @@
 import { config, library } from '@fortawesome/fontawesome-svg-core'
-import { faTwitter, faGithub, faDiscord, faSpotify } from '@fortawesome/free-brands-svg-icons'
-import {
-  faEnvelope,
-  faSearch,
-  faCalendarDay,
-  faGlobeEurope,
-  faCaretDown as faSolidCaretDown,
-} from '@fortawesome/free-solid-svg-icons'
+import { faDiscord, faGithub, faSpotify, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import {
-  faCloud,
-  faClouds,
-  faLightbulb,
-  faTachometer,
-  faMoon,
-  faHomeLgAlt,
+  faCalendarDay,
+  faEnvelope,
+  faGlobeEurope,
+  faSearch,
+  faCaretDown as faSolidCaretDown,
+} from '@fortawesome/free-solid-svg-icons'
+import { faSun } from '@fortawesome/pro-duotone-svg-icons'
+import {
   faCaretDown,
   faCaretRight,
-  faDotCircle,
-  faStars,
-  faSnooze,
-  faCloudSnow,
-  faThunderstorm,
-  faCloudShowersHeavy,
-  faCloudRain,
-  faCloudSun,
-  faSunHaze,
   faClipboard,
+  faCloud,
+  faCloudRain,
+  faCloudShowersHeavy,
+  faCloudSnow,
+  faCloudSun,
+  faClouds,
+  faDotCircle,
   faExternalLink,
+  faHomeLgAlt,
+  faLightbulb,
+  faMoon,
+  faSnooze,
+  faStars,
+  faSunHaze,
+  faTachometer,
+  faThunderstorm,
 } from '@fortawesome/pro-regular-svg-icons'
-import { faSun } from '@fortawesome/pro-duotone-svg-icons'
 
 // The following import prevents a Font Awesome icon server-side rendering bug,
 // where the icons flash from a very large icon down to a properly sized one:

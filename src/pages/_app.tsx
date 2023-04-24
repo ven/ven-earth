@@ -1,10 +1,10 @@
-import 'styles/globals.css'
+import { Navbar } from 'components/Nav/Navbar'
 import 'lib/fontawesome'
-import { SWRConfig } from 'swr'
 import { ThemeProvider } from 'next-themes'
 import { AppProps } from 'next/app'
 import { Toaster } from 'react-hot-toast'
-import { Navbar } from 'components/Nav/Navbar'
+import 'styles/globals.css'
+import { SWRConfig } from 'swr'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
