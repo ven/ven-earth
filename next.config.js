@@ -1,6 +1,5 @@
 module.exports = {
   reactStrictMode: true,
-  webpack5: true,
   poweredByHeader: false,
   images: {
     domains: ['lastfm.freetls.fastly.net'],
