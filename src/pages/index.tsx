@@ -47,13 +47,13 @@ const Home = () => {
     <>
       <GenericMeta
         title="ven.earth"
-        description="20-year-old software engineer and student from the United Kingdom."
+        description="21-year-old software engineer and student from the United Kingdom."
       />
 
       <MainLayout margin={false}>
         <h1 className="text-6xl font-bold">ven</h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-sm mt-2">
-          20-year-old <span className="font-semibold">software engineer</span> from the United
+          21-year-old <span className="font-semibold">software engineer</span> from the United
           Kingdom.
         </p>
         <div className="grid grid-flow-col w-48 mt-3 text-lg">
