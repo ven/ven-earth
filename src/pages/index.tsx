@@ -47,7 +47,7 @@ const Home = () => {
     <>
       <GenericMeta
         title="ven.earth"
-        description="21-year-old software engineer and student from the United Kingdom."
+        description="22-year-old software engineer and student from the United Kingdom."
       />
 
       <MainLayout margin={false}>
