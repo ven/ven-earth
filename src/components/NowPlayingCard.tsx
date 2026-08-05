@@ -3,13 +3,17 @@ import SongImage from '@public/img/song.webp'
 import { truncate } from 'lib/utils'
 import Image from 'next/image'
 import FadeIn from 'react-fade-in'
-import { useLastFM } from 'use-last-fm'
-const { NEXT_PUBLIC_LASTFM_API_KEY } = process.env
+import { LastFMResponse } from 'types/lastFM'
+import useSWR from 'useSWR'
 
 export const NowPlayingCard = () => {
-  const lastFM = useLastFM('venoras', NEXT_PUBLIC_LASTFM_API_KEY!, 5000, 'large')
+  const { data }: { data?: LastFMResponse } = useSWR('getCurrentPlaying', { refreshInterval: 5000 })
 
-  if (['connecting', 'error'].includes(lastFM.status)) return null
+  if (!data) return null
+
+  if (['connecting', 'error'].includes(data.status)) return null
+
+
 
   return (
     <FadeIn>
